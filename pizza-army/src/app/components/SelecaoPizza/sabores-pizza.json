@@ -3,6 +3,13 @@
     "id": 1,
     "nome": "Margherita",
     "preco": 89.9,
+    "descricao": "Crosta fina, molho de tomate fresco, queijo mozzarella derretido e manjericão aromático, uma combinação clássica e irresistível.",
+    "ingrediente": [
+      "Queijos Importados",
+      "Catupiry de primeira qualidade",
+      "Bastante recheio",
+      "Forno à lenha"
+    ],
     "img": [
       {
         "id": 1,
@@ -26,6 +33,13 @@
     "id": 2,
     "nome": "4 Queijos",
     "preco": 85.9,
+    "descricao": "Crosta fina, molho de Tomate, muçarela, parmesão Ralado, catupiry, gorgonzola e Orégano.",
+    "ingrediente": [
+      "Queijos de primeira",
+      "Borda recheada",
+      "Bastante recheio",
+      "Forno à lenha"
+    ],
     "img": [
       {
         "id": 1,
@@ -49,6 +63,13 @@
     "id": 3,
     "nome": "Camarão com Queijo",
     "preco": 99.9,
+    "descricao": "Crosta fina, molho de tomate fresco, queijo mozzarella derretido e manjericão aromático, camarões frescos.",
+    "ingrediente": [
+      "Queijos Importados",
+      "Camarões frescos",
+      "Bastante recheio",
+      "Forno à lenha"
+    ],
     "img": [
       {
         "id": 1,

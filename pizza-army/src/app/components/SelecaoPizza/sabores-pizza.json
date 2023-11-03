@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "nome": "Margherita",
+    "preco": 89.9,
+    "img": [
+      {
+        "id": 1,
+        "urlImg": "../../assets/sabores-pizza/margherita/1x/pexels-brett-jordan-842519.png"
+      },
+      {
+        "id": 2,
+        "urlImg": "../../assets/sabores-pizza/margherita/1x/pexels-kristina-paukshtite-1146760.png"
+      },
+      {
+        "id": 3,
+        "urlImg": "../../assets/sabores-pizza/margherita/1x/pexels-narda-yescas-1566837.png"
+      },
+      {
+        "id": 4,
+        "urlImg": "../../assets/sabores-pizza/margherita/1x/pexels-vincent-rivaud-2233348.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "4 Queijos",
+    "preco": 85.9,
+    "img": [
+      {
+        "id": 1,
+        "urlImg": "../../assets/sabores-pizza/4queijos/imagem1.jpg"
+      },
+      {
+        "id": 2,
+        "urlImg": "../../assets/sabores-pizza/4queijos/imagem2.jpg"
+      },
+      {
+        "id": 3,
+        "urlImg": "../../assets/sabores-pizza/4queijos/imagem3.jpg"
+      },
+      {
+        "id": 4,
+        "urlImg": "../../assets/sabores-pizza/4queijos/imagem4.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Camarão com Queijo",
+    "preco": 99.9,
+    "img": [
+      {
+        "id": 1,
+        "urlImg": "../../assets/sabores-pizza/camaraoQueijo/imagem1.jpg"
+      },
+      {
+        "id": 2,
+        "urlImg": "../../assets/sabores-pizza/camaraoQueijo/imagem2.jpg"
+      },
+      {
+        "id": 3,
+        "urlImg": "../../assets/sabores-pizza/camaraoQueijo/imagem3.jpg"
+      },
+      {
+        "id": 4,
+        "urlImg": "../../assets/sabores-pizza/camaraoQueijo/imagem4.jpg"
+      }
+    ]
+  }
+]

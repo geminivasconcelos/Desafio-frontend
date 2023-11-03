@@ -28,10 +28,19 @@ const config: Config = {
         "18px": "18px",
         "22px": "22px",
         "20px": "20px",
+        "408px": "408px",
+        "12px": "12px",
+        "40px": "40px",
+        "61px": "61px",
+        "14px": "14px",
       },
       colors: {
-        "verde-D29": '#1F6D29'
-      }
+        "verde-D29": "#1F6D29",
+        "ouro-521": "#ffb521",
+        descricao: "#281815",
+        "cinza-sabor": "#BFBFBF",
+        "black-815": "#281815",
+      },
     },
   },
   plugins: [],

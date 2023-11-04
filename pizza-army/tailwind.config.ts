@@ -38,7 +38,7 @@ const config: Config = {
         "359px": "359px",
         "449px": "449px",
         "296px": "296px",
-        "28px": "28px",       
+        "28px": "28px",
       },
       colors: {
         "verde-D29": "#1F6D29",

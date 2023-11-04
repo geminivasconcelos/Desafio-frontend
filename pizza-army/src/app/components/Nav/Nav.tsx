@@ -5,8 +5,8 @@ import PizzaArmy from "../../assets/pizza-army/pizza army.png";
 
 export function Nav() {
   return (
-    <nav className="w-full flex fixed bg-transparent h-16 justify-around">
-      <div className="flex ">
+    <nav className="w-full flex sticky bg-transparent h-16 justify-around bg-slate-400">
+      <div className="flex ml-32">
         <p className="text-sm mt-[21px] font-medium">Comprar</p>
         <img className="w-4 h-4 mt-[24px] ml-1" src={Arrow.src} alt="Arrow" />
       </div>

@@ -71,7 +71,11 @@ export function SelecaoPizza() {
         {pizzaSelecionada &&
           pizzaSelecionada.img.map((imagem: Imagem) => (
             <div key={imagem.id}>
-              <img src={imagem.urlImg} alt={`Imagem ${imagem.id}`} className="rounded" />
+              <img
+                src={imagem.urlImg}
+                alt={`Imagem ${imagem.id}`}
+                className="rounded"
+              />
             </div>
           ))}
       </div>
@@ -148,6 +152,5 @@ export function SelecaoPizza() {
         </div>
       </div>
     </section>
-
   );
 }

@@ -1,11 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Estrela from "../../assets/icones/star_black_24dp.png";
 import saboresPizza from "./sabores-pizza.json";
 import * as React from "react";
 import Sub from "../../assets/icones/sub-1x.png";
 import Add from "../../assets/icones/add-1x.png";
 import Check from "../../assets/icones/check1x.png";
+import * as _ from "lodash";
 
 interface Imagem {
   id: number;
@@ -19,7 +20,7 @@ export function SelecaoPizza() {
     saboresPizza.find((prato: any) => prato.nome === "Margherita")
   );
 
-  const imagensEstrela = [];
+  const imagensEstrela: JSX.Element[] = [];
 
   for (let i = 0; i < 5; i++) {
     imagensEstrela.push(<img key={i} src={Estrela.src} alt="" />);
@@ -64,6 +65,37 @@ export function SelecaoPizza() {
   }, [quantidadePizzaSelecionada, pizzaSelecionada.preco]);
 
   const subtotalFormatado = subTotalQtdPizza.toFixed(2);
+
+  const adicionarAoCarrinho = () => {
+    const pizzaSelecionada = {
+      nomePizza: selecaoOpcao,
+      quantidadePizza: quantidadePizzaSelecionada,
+      subTotal: subTotalQtdPizza.toFixed(2),
+    };
+
+    const pegaLocalStorePizza = localStorage.getItem("carrinho");
+
+    let carrinho: any[] = pegaLocalStorePizza
+      ? JSON.parse(pegaLocalStorePizza)
+      : [];
+    let pizzaEncontrada = false;
+    if (carrinho.length > 0) {
+      _.filter(carrinho, (pizza) => {
+        if (pizzaSelecionada.nomePizza === pizza.nomePizza) {
+          pizza.quantidadePizza = pizzaSelecionada.quantidadePizza;
+          pizza.subTotal = pizzaSelecionada.subTotal;
+          pizzaEncontrada = true;
+        }
+      });
+      if (!pizzaEncontrada) {
+        carrinho.push(pizzaSelecionada);
+      }
+    } else {
+      carrinho.push(pizzaSelecionada);
+    }
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+  };
 
   return (
     <section className="flex gap-12">
@@ -128,7 +160,10 @@ export function SelecaoPizza() {
               Subtotal: <strong> {subtotalFormatado}</strong>
             </p>
           </div>
-          <button className="font-bebasNeue bg-ouro-521 text-sm w-[408px] h-[40px] rounded-[20px] tracking-wide mt-[12px]">
+          <button
+            onClick={adicionarAoCarrinho}
+            className="font-bebasNeue bg-ouro-521 text-sm w-[408px] h-[40px] rounded-[20px] tracking-wide mt-[12px]"
+          >
             ADICIONAR AO CARRINHO
           </button>
         </div>

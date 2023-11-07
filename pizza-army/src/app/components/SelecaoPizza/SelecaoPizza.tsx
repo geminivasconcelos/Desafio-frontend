@@ -13,7 +13,7 @@ interface Imagem {
   urlImg: string;
 }
 
-export function SelecaoPizza() {
+export function SelecaoPizza({ setIsOpen }) {
   const [selecaoOpcao, setSelecaoOpcao] = useState<string>("Margherita");
 
   const [pizzaSelecionada, setPizzaSelecionada] = useState<any>(
@@ -95,6 +95,7 @@ export function SelecaoPizza() {
     }
 
     localStorage.setItem("carrinho", JSON.stringify(carrinho));
+  
   };
 
   return (
